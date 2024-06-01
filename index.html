@@ -134,6 +134,23 @@
                             }
                         }
                         ])
+        // Space complexity problem - O(1) , time complexity - O(n)square
+        // arrange the array by ascending order
+        // Selection sort
+let arr = [3, 340, 34, 56, 345, 234,3456]
+for(let ind = 0 ; ind < arr.length; ind++){
+  let minInd = ind
+    for(let ind1 = ind; ind1 < arr.length; ind1++){
+      if (arr[minInd] > arr[ind1]){
+        minInd = ind1
+        }
+      }
+      let temp = arr[ind]
+      arr[ind]= arr[minInd]
+      arr[minInd] = temp
+  }
+  
+  console.log(...arr)
                     
    </script>
 </body>
